@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+    <header id="mainH"> <h1>Calculadora</h1>
+    <p style="font-size: 12px;">Por: Lucas Aguilar</p>
+    </header>
+    <section><div id="container">
+
+        <header id="resultado"><br><p id="txtResultado" style="font-size: 20px;">.</p></header>
+        <table id="digitos">
+            <tr>
+                <td><button onclick="inserir('1')">1</button></td>
+                <td><button onclick="inserir('2')">2</button></td>
+                <td><button onclick="inserir('3')">3</button></td>
+                <td><button onclick="clean()">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('4')">4</button></td>
+                <td><button onclick="inserir('5')">5</button></td>
+                <td><button onclick="inserir('6')">6</button></td>
+                <td><button onclick="inserir('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('7')">7</button></td>
+                <td><button onclick="inserir('8')">8</button></td>
+                <td><button onclick="inserir('9')">9</button></td>
+                <td><button onclick="inserir('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('/')">/</button></td>
+                <td><button onclick="inserir('0')" id="btt0">0</button></td>
+                <td><button onclick="inserir('*')">*</button></td>
+                <td><button onclick="somar()">=</button></td>
+            </tr>
+        </table>
+    </div></section>
+    <footer></footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
